@@ -314,7 +314,7 @@ console.log(historicalData)
   };
 
   return (
-    <div className="md:px-10 px-3">
+    <div className="md:px-10 px-3 h-screen">
       <div className="max-w-md mx-auto mt-7 p-6">
         <div className="relative w-full">
           <input
