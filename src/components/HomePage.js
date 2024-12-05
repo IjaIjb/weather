@@ -356,7 +356,7 @@ console.log(historicalData)
           <h2 className="text-xl font-bold text-center">
             Weather Data for 2 Days Ago
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
 
           <div className="p-4 mt-4 bg-blue-600 rounded-lg">
             <h3 className="text-lg font-semibold">Date: {historicalData.forecast.forecastday[0].date}</h3>
