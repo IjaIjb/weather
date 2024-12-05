@@ -214,8 +214,9 @@ const HomePage = () => {
   const [loading, setLoading] = useState(false);
 console.log(historicalData)
   const weatherApiKey = "8631408bbd50406cba0131620232505";
-  const forecastApiUrl = "http://127.0.0.1:5000/forecast";
+  const forecastApiUrl = "https://weather-ydvl.onrender.com/forecast";
 
+  
   const fetchWeatherData = async (location) => {
     try {
       setLoading(true);
@@ -256,7 +257,7 @@ console.log(historicalData)
       setLoading(true);
       try {
         const [forecastResponse, weatherResponse] = await Promise.all([
-          axios.get("http://127.0.0.1:5000/forecast", {
+          axios.get("https://weather-ydvl.onrender.com/forecast", {
             params: { location: query },
           }),
           axios.get("https://api.weatherapi.com/v1/current.json", {
